@@ -1,16 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
 
 :root { 
---mainTextColor: #000; /* black text */
-  --secondaryTextColor: rgb(51, 51, 51);
-  --mainLinkColor: #0d00fd;
-  --mainBorderColor: rgb(161, 158, 158);
-  --mainBgColor: #ffffff; /* white background */
-  --gradientStart: #cce7ff;
-  --gradientEnd: #e6f2ff;
-}
-
-[data-theme="dark"] { 
 --mainTextColor: #fff; /* white text */
   --secondaryTextColor: #d1d1d1;
   --mainLinkColor: #9bbcff;
@@ -18,6 +8,16 @@
   --mainBgColor: #000000; /* black background */
   --gradientStart: #0d1441ad; /* dark blue */
   --gradientEnd: #0515307b;   /* almost black */
+}
+
+[data-theme="dark"] { 
+--mainTextColor: #000; /* black text */
+  --secondaryTextColor: rgb(51, 51, 51);
+  --mainLinkColor: #0d00fd;
+  --mainBorderColor: rgb(161, 158, 158);
+  --mainBgColor: #ffffff; /* white background */
+  --gradientStart: #cce7ff;
+  --gradientEnd: #e6f2ff;
 }
 body {
   color: var(--mainTextColor);
