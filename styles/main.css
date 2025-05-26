@@ -9,7 +9,7 @@
   --gradientEnd: #0515307b;   /* almost black */
 }
 
-[data-theme="light"] {
+[data-theme="dark"] {
 --mainTextColor: #000; /* black text */
   --secondaryTextColor: rgb(51, 51, 51);
   --mainLinkColor: #0d00fd;
