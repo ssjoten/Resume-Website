@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --mainTextColor: #000;
+    --secondaryTextColor: rgb(51, 51, 51);
+    --mainLinkColor: #0d00fd;
+    --mainBorderColor: rgb(161, 158, 158);
+    --mainBgColor: #f0f8ff; /* very light blue */
+    --gradientStart: #cce7ff;
+    --gradientEnd: #e6f2ff;
+  }
+  
+  [data-theme="dark"] {
+    --mainTextColor: #fff;
+    --secondaryTextColor: #adb0b1;
+    --mainLinkColor: #1ebed6;
+    --mainBorderColor: #2b3031;
+    --mainBgColor: #000000; /* super dark navy almost black */
+    --gradientStart: #0d1441ad; /* very dark blue */
+    --gradientEnd: #0515307b;   /* almost black */
+  }
+  
+  body {
+    color: var(--mainTextColor);
+    background-color: var(--mainBgColor);
+    background-image: 
+      radial-gradient(circle at top left, var(--gradientStart), transparent 60%),
+      radial-gradient(circle at bottom right, var(--gradientEnd), transparent 70%);
+    transition: background-color 0.4s ease, background-image 0.4s ease, color 0.4s ease;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+*{
+    font-family: 'Readex Pro';
+    line-height: 1.5em;
+    box-sizing: border-box;
+    color: var(--mainTextColor);
+    
+}
+
+body{
+    background-color: var(--mainBgColor);            
+}
+
+p, span, li{
+    color: var(--secondaryTextColor);
+    font-size: 1em;
+}
+
+a{
+    text-decoration: none;
+    color: var(--mainLinkColor);
+    font-weight: 500;
+}
+
+li{
+    line-height: 1.9em;
+}
+
+#container--main{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.section--page{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#wrapper--hero{
+    display: flex;
+    align-items: center;
+    gap: 4em;
+}
+
+#bio, a{
+    font-weight: 300;
+}
+
+#user-name{
+    font-size: 48px;
+    line-height: 1em;
+}
+
+#profile-pic{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#email{
+    color: var(--mainTextColor);
+}
+
+#socials--list{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1em;
+    flex-wrap: wrap;
+    border: 1px solid var(--mainBorderColor);
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    align-items: center;
+}
+
+#socials--list a{
+    font-weight: 300;
+    color: var(--secondaryTextColor);
+    font-size: 0.9em;
+    transition: 0.3s;
+}
+
+#socials--list a:hover{
+    font-weight: 100;
+    color: var(--mainLinkColor);
+    font-size: 0.9em;
+}
+
+#qualifications--list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #qualifications--list li {
+    margin-bottom: 1.5em; /* spaces between full items */
+    font-size: 1em;
+    color: var(--secondaryTextColor);
+  }
+
+#wrapper--techstack__items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: 0.9em;
+}
+
+.card--techstack{
+    border: 1px solid var(--mainBorderColor);
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    align-items: center;
+}
+
+.card--project{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-top: 1px solid var(--mainBorderColor);
+}
+
+.card--project a{
+    color: var(--mainTextColor);
+
+    transition: 0.3s;
+}
+
+.card--project a:hover{
+    color: rgb(30, 190,214);
+
+}
+
+.card--work-history{
+    border-left: 1px solid var(--mainBorderColor);
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding-left: 2em;
+}
+
+.line-break{
+    background-color: var(--mainBorderColor);
+    height: 1px;
+}
+
+
+@media(max-width:600px){
+
+    .section--page{
+        padding-top: 1em;
+        padding-bottom: 1em;
+        margin-top: 3em;
+    }
+
+    #wrapper--hero{
+        display: flex;
+        align-items: center;
+        gap: 1em;
+    }
+
+    #profile-pic{
+        width: 200px;
+        height: 200px;
+    }
+
+    #wrapper--hero{
+        flex-direction: column;
+    }
+
+    .card--work-history{
+        border-left: none;
+        padding-left: 0;
+    }
+}
