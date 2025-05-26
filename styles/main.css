@@ -10,7 +10,7 @@
   --gradientEnd: #e6f2ff;
 }
 
-[data-theme="light"] { 
+[data-theme="dark"] { 
 --mainTextColor: #fff; /* white text */
   --secondaryTextColor: #d1d1d1;
   --mainLinkColor: #9bbcff;
